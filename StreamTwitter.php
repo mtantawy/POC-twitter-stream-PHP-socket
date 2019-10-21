@@ -1,6 +1,5 @@
 <?php
 
-use Prntscr\MentionHandler;
 use React\EventLoop\Factory;
 use React\Stream\DuplexResourceStream;
 
