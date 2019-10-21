@@ -47,6 +47,7 @@ $stream->on('error', function (Exception $e) {
 	echo 'Error: ' . $e->getMessage() . PHP_EOL;
 });
 
+// We have to manually write to the socket the HTTP Headers
 $stream->write("GET $path HTTP/1.1\r\nHost: $host\r\nAuthorization: Bearer $token\r\n\r\n");
 
 $loop->run();
